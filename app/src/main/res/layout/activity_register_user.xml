@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:id="@+id/img"
+        android:layout_gravity="center"
+        android:src="@drawable/img"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:text="Sign In"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter Email"
+        android:id="@+id/email1"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter Pasword1"
+        android:id="@+id/password1"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Confirm Pasword"
+        android:id="@+id/password2"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="register"
+        android:layout_marginTop="5dp"
+        android:onClick="Register"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Back to Login"
+        android:id="@+id/backToLogin"
+        android:onClick="SignUp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
